@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto — A4Motos</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">A4<span>MOTOS</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html" class="activo">Contacto</a></li>
+    </ul>
+    <button class="btn-nav" onclick="location.href='catalogo.html'">Ver Motos</button>
+    <button class="menu-hamburguesa" id="menuBtn">&#9776;</button>
+  </nav>
+
+  <!-- CABECERA -->
+  <div class="cabecera-pagina">
+    <p class="ruta"><a href="index.html">Inicio</a> / Contacto</p>
+    <h1>Habla con <span>Nosotros</span></h1>
+    <p>Estamos aquí para ayudarte a encontrar tu moto ideal.</p>
+  </div>
+
+  <!-- LAYOUT CONTACTO -->
+  <div class="layout-contacto">
+
+    <!-- INFORMACIÓN -->
+    <div class="info-contacto">
+      <h2>¿Cómo podemos <span>ayudarte?</span></h2>
+      <p>Nuestro equipo de asesores está disponible para responder todas tus preguntas sobre catálogo, financiación, mantenimiento y más. No dudes en escribirnos.</p>
+
+      <div class="dato-contacto">
+        <span class="icono">📍</span>
+        <div>
+          <strong>Dirección</strong>
+          <span>Calle 45 # 23-10, Local 3, Colombia</span>
+        </div>
+      </div>
+
+      <div class="dato-contacto">
+        <span class="icono">📞</span>
+        <div>
+          <strong>Teléfono</strong>
+          <span>+57 300 123 4567</span>
+        </div>
+      </div>
+
+      <div class="dato-contacto">
+        <span class="icono">✉️</span>
+        <div>
+          <strong>Correo</strong>
+          <span>info@a4motos.co</span>
+        </div>
+      </div>
+
+      <div class="dato-contacto">
+        <span class="icono">🕐</span>
+        <div>
+          <strong>Horario de atención</strong>
+          <span>Lunes a Viernes: 8:00 am – 6:00 pm</span>
+          <span>Sábados: 9:00 am – 2:00 pm</span>
+        </div>
+      </div>
+
+      <div class="dato-contacto">
+        <span class="icono">💬</span>
+        <div>
+          <strong>WhatsApp</strong>
+          <span>+57 310 987 6543</span>
+        </div>
+      </div>
+
+      <div class="mapa-placeholder">
+        📍 Mapa de ubicación 
+      </div>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="formulario">
+      <h3>Envíanos un Mensaje</h3>
+
+      <form id="contactForm">
+        <div class="fila-campos">
+          <div class="campo">
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu nombre" required/>
+          </div>
+          <div class="campo">
+            <label>Apellido</label>
+            <input type="text" placeholder="Tu apellido" required/>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label>Correo electrónico</label>
+          <input type="email" placeholder="correo@ejemplo.com" required/>
+        </div>
+
+        <div class="campo">
+          <label>Teléfono / WhatsApp</label>
+          <input type="tel" placeholder="+57 300 000 0000"/>
+        </div>
+
+        <div class="campo">
+          <label>Asunto</label>
+          <select required>
+            <option value="">Selecciona un asunto</option>
+            <option>Información sobre una moto</option>
+            <option>Cotización</option>
+            <option>Financiación</option>
+            <option>Mantenimiento y taller</option>
+            <option>Accesorios y repuestos</option>
+            <option>Otro</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label>Mensaje</label>
+          <textarea placeholder="Escríbenos tu consulta aquí..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div>
+        <a href="index.html" class="footer-logo">A4<span>MOTOS</span></a>
+        <p class="footer-desc">Tu concesionario de confianza.<br/>Calidad y pasión sobre dos ruedas.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul class="footer-nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <div class="footer-info">
+          <p>📍 Calle 45 # 23-10, Colombia</p>
+          <p>📞 +57 300 123 4567</p>
+          <p>✉️ info@a4motos.co</p>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 A4Motos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

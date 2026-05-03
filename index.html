@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A4Motos — Tu Moto Ideal</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">A4<span>MOTOS</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="activo">Inicio</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="btn-nav" onclick="location.href='catalogo.html'">Ver Motos</button>
+    <button class="menu-hamburguesa" id="menuBtn">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Bienvenido a A4<span>MOTOS</span></h1>
+    <p>Las mejores motos del mercado — precio justo, calidad garantizada.</p>
+    <div class="hero-botones">
+      <a href="catalogo.html" class="btn-rojo">Explorar Catálogo</a>
+      <a href="contacto.html" class="btn-borde">Contáctanos</a>
+    </div>
+  </section>
+
+  <!-- ESTADÍSTICAS -->
+  <div class="estadisticas">
+    <div class="estadistica">
+      <span class="numero">12+</span>
+      <p>Años de experiencia</p>
+    </div>
+    <div class="estadistica">
+      <span class="numero">500+</span>
+      <p>Clientes satisfechos</p>
+    </div>
+    <div class="estadistica">
+      <span class="numero">30+</span>
+      <p>Marcas disponibles</p>
+    </div>
+    <div class="estadistica">
+      <span class="numero">100%</span>
+      <p>Garantía de calidad</p>
+    </div>
+  </div>
+
+  <!-- MOTOS DESTACADAS -->
+  <div class="seccion">
+    <div class="encabezado-seccion">
+      <h2>Motos <span>Destacadas</span></h2>
+      <a href="catalogo.html" class="link-ver-todos">Ver todas →</a>
+    </div>
+    <div class="grid-tarjetas">
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600')"></div>
+        <div class="tarjeta-cuerpo">
+          <span class="etiqueta">Sport</span>
+          <h3>Yamaha YZF-R3</h3>
+          <p>Motor 321cc, refrigeración líquida, ABS de serie.</p>
+        </div>
+        <div class="tarjeta-pie">
+          <strong>$18.500.000</strong>
+          <a href="catalogo.html" class="btn-chico">Ver más</a>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen" style="background-image: url('https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=600')"></div>
+        <div class="tarjeta-cuerpo">
+          <span class="etiqueta">Adventure</span>
+          <h3>Honda CB500X</h3>
+          <p>471cc bicilíndrico, gran versatilidad y confort.</p>
+        </div>
+        <div class="tarjeta-pie">
+          <strong>$24.900.000</strong>
+          <a href="catalogo.html" class="btn-chico">Ver más</a>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen" style="background-image: url('https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=600')"></div>
+        <div class="tarjeta-cuerpo">
+          <span class="etiqueta">Naked</span>
+          <h3>Kawasaki Z400</h3>
+          <p>399cc paralelo, diseño agresivo y alto rendimiento.</p>
+        </div>
+        <div class="tarjeta-pie">
+          <strong>$21.200.000</strong>
+          <a href="catalogo.html" class="btn-chico">Ver más</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CATEGORÍAS -->
+  <div class="seccion-fondo">
+    <div class="seccion">
+      <div class="encabezado-seccion">
+        <h2>Categorías</h2>
+      </div>
+      <div class="grid-categorias">
+        <a href="catalogo.html" class="categoria">
+          <span class="icono">🏁</span>
+          <span>Sport</span>
+        </a>
+        <a href="catalogo.html" class="categoria">
+          <span class="icono">🛣️</span>
+          <span>Adventure</span>
+        </a>
+        <a href="catalogo.html" class="categoria">
+          <span class="icono">🔥</span>
+          <span>Naked</span>
+        </a>
+        <a href="catalogo.html" class="categoria">
+          <span class="icono">🛵</span>
+          <span>Scooter</span>
+        </a>
+        <a href="catalogo.html" class="categoria">
+          <span class="icono">🏔️</span>
+          <span>Enduro</span>
+        </a>
+        <a href="catalogo.html" class="categoria">
+          <span class="icono">🛺</span>
+          <span>Clásica</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BANNER CTA -->
+  <section class="banner-cta">
+    <h2>¿Listo para tu próxima aventura?</h2>
+    <p>Financia tu moto ideal con las mejores tasas del mercado.</p>
+    <a href="contacto.html" class="btn-rojo">Solicitar Información</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div>
+        <a href="index.html" class="footer-logo">A4<span>MOTOS</span></a>
+        <p class="footer-desc">Tu concesionario de confianza.<br/>Calidad y pasión sobre dos ruedas.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul class="footer-nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <div class="footer-info">
+          <p>📍 Calle 45 # 23-10, Colombia</p>
+          <p>📞 +57 300 123 4567</p>
+          <p>✉️ info@a4motos.co</p>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 A4Motos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

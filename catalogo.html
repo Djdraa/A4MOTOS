@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo — A4Motos</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">A4<span>MOTOS</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="catalogo.html" class="activo">Catálogo</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="btn-nav" onclick="location.href='contacto.html'">Contáctanos</button>
+    <button class="menu-hamburguesa" id="menuBtn">&#9776;</button>
+  </nav>
+
+  <!-- CABECERA -->
+  <div class="cabecera-pagina">
+    <p class="ruta"><a href="index.html">Inicio</a> / Catálogo</p>
+    <h1>Nuestro <span>Catálogo</span></h1>
+    <p>Encuentra la moto perfecta para ti. Filtra por categoría, marca o presupuesto.</p>
+  </div>
+
+  <!-- LAYOUT CATÁLOGO -->
+  <div class="layout-catalogo">
+
+    <!-- FILTROS -->
+    <aside class="filtros">
+      <h3>🔍 Filtrar</h3>
+
+      <div class="grupo-filtro">
+        <label>Categoría</label>
+        <select>
+          <option>Todas</option>
+          <option>Sport</option>
+          <option>Adventure</option>
+          <option>Naked</option>
+          <option>Scooter</option>
+          <option>Enduro</option>
+          <option>Clásica</option>
+        </select>
+      </div>
+
+      <div class="grupo-filtro">
+        <label>Marca</label>
+        <select>
+          <option>Todas</option>
+          <option>Yamaha</option>
+          <option>Honda</option>
+          <option>Kawasaki</option>
+          <option>Suzuki</option>
+          <option>KTM</option>
+          <option>BMW</option>
+        </select>
+      </div>
+
+      <div class="grupo-filtro">
+        <label>Cilindraje</label>
+        <select>
+          <option>Todos</option>
+          <option>Hasta 200cc</option>
+          <option>200 - 400cc</option>
+          <option>400 - 700cc</option>
+          <option>700cc o más</option>
+        </select>
+      </div>
+
+      <div class="grupo-filtro">
+        <label>Precio máximo</label>
+        <input type="range" id="precioRange" min="5000000" max="80000000" value="40000000" step="1000000"/>
+        <p class="precio-texto">Hasta: <span id="precioVal">$40.000.000</span></p>
+      </div>
+
+      <div class="grupo-filtro">
+        <label>Disponibilidad</label>
+        <div class="check-lista">
+          <label><input type="checkbox" checked> En stock</label>
+          <label><input type="checkbox"> Por pedido</label>
+          <label><input type="checkbox"> Usadas</label>
+        </div>
+      </div>
+
+      <button class="btn-rojo" style="width: 100%; text-align: center; margin-top: 5px;">Aplicar Filtros</button>
+    </aside>
+
+    <!-- GRID DE MOTOS -->
+    <div class="grid-catalogo">
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600')"></div>
+        <div class="tarjeta-cuerpo">
+          <span class="etiqueta">Sport</span>
+          <h3>Yamaha YZF-R3</h3>
+          <p>321cc, refrigeración líquida, ABS de serie. Ideal para ciudad y pista.</p>
+        </div>
+        <div class="tarjeta-pie">
+          <strong>$18.500.000</strong>
+          <a href="contacto.html" class="btn-chico">Cotizar</a>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen" style="background-image: url('https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=600')"></div>
+        <div class="tarjeta-cuerpo">
+          <span class="etiqueta">Adventure</span>
+          <h3>Honda CB500X</h3>
+          <p>471cc bicilíndrico, gran versatilidad y confort para largos recorridos.</p>
+        </div>
+        <div class="tarjeta-pie">
+          <strong>$24.900.000</strong>
+          <a href="contacto.html" class="btn-chico">Cotizar</a>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen" style="background-image: url('https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=600')"></div>
+        <div class="tarjeta-cuerpo">
+          <span class="etiqueta">Naked</span>
+          <h3>Kawasaki Z400</h3>
+          <p>399cc paralelo, diseño agresivo y alto rendimiento en cada curva.</p>
+        </div>
+        <div class="tarjeta-pie">
+          <strong>$21.200.000</strong>
+          <a href="contacto.html" class="btn-chico">Cotizar</a>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen" style="background-image: url('https://images.unsplash.com/photo-1547549082-4bc09bb2821b?w=600')"></div>
+        <div class="tarjeta-cuerpo">
+          <span class="etiqueta">Adventure</span>
+          <h3>KTM 390 Adventure</h3>
+          <p>373cc monocilíndrico, pantalla TFT, control de tracción. Lista para el off-road.</p>
+        </div>
+        <div class="tarjeta-pie">
+          <strong>$26.800.000</strong>
+          <a href="contacto.html" class="btn-chico">Cotizar</a>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen" style="background-image: url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600')"></div>
+        <div class="tarjeta-cuerpo">
+          <span class="etiqueta">Sport</span>
+          <h3>Suzuki GSX-R600</h3>
+          <p>599cc cuatro cilindros, motor de clase mundial, aerodinámica pura.</p>
+        </div>
+        <div class="tarjeta-pie">
+          <strong>$38.500.000</strong>
+          <a href="contacto.html" class="btn-chico">Cotizar</a>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen" style="background-image: url('https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600')"></div>
+        <div class="tarjeta-cuerpo">
+          <span class="etiqueta">Naked</span>
+          <h3>BMW G310R</h3>
+          <p>313cc monocilíndrico, calidad alemana, perfecta para el día a día urbano.</p>
+        </div>
+        <div class="tarjeta-pie">
+          <strong>$22.400.000</strong>
+          <a href="contacto.html" class="btn-chico">Cotizar</a>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen" style="background-image: url('https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600')"></div>
+        <div class="tarjeta-cuerpo">
+          <span class="etiqueta">Scooter</span>
+          <h3>Yamaha XMAX 300</h3>
+          <p>292cc, gran maletero, suspensión suave y control de tracción integrado.</p>
+        </div>
+        <div class="tarjeta-pie">
+          <strong>$16.900.000</strong>
+          <a href="contacto.html" class="btn-chico">Cotizar</a>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen" style="background-image: url('https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=600')"></div>
+        <div class="tarjeta-cuerpo">
+          <span class="etiqueta">Enduro</span>
+          <h3>Honda CRF300L</h3>
+          <p>286cc, dual sport, suspensión de largo recorrido y tracción para todo terreno.</p>
+        </div>
+        <div class="tarjeta-pie">
+          <strong>$19.700.000</strong>
+          <a href="contacto.html" class="btn-chico">Cotizar</a>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta-imagen" style="background-image: url('https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600')"></div>
+        <div class="tarjeta-cuerpo">
+          <span class="etiqueta">Clásica</span>
+          <h3>Royal Enfield Meteor</h3>
+          <p>349cc, estilo retro, motor suave y confort en rutas largas de campo.</p>
+        </div>
+        <div class="tarjeta-pie">
+          <strong>$23.100.000</strong>
+          <a href="contacto.html" class="btn-chico">Cotizar</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div>
+        <a href="index.html" class="footer-logo">A4<span>MOTOS</span></a>
+        <p class="footer-desc">Tu concesionario de confianza.<br/>Calidad y pasión sobre dos ruedas.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul class="footer-nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <div class="footer-info">
+          <p>📍 Calle 45 # 23-10, Colombia</p>
+          <p>📞 +57 300 123 4567</p>
+          <p>✉️ info@a4motos.co</p>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 A4Motos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
